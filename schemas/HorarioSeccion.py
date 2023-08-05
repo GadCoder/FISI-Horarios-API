@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-from schemas.Seccion import Seccion
 
 
 class HorarioSeccionBase(BaseModel):
@@ -14,7 +13,6 @@ class HorarioSeccionCreate(HorarioSeccionBase):
 
 class HorarioSeccion(HorarioSeccionBase):
     id: int
-    seccion = Seccion
 
     class Config:
         orm_mode = True

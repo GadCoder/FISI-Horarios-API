@@ -7,18 +7,17 @@ from schemas.HorarioSeccion import HorarioSeccion
 
 
 class SeccionBase(BaseModel):
+    codigo_seccion: str
     numero_seccion: int
+    carrera: str
 
 
 class SeccionCreate(SeccionBase):
-    id: int
-    carrera: str
-    curso: Curso
-    docente: Optional[Docente] = Field(None)
     pass
 
 
 class Seccion(SeccionBase):
+    id: int
     horarios: list[HorarioSeccion] = []
 
     class Config:

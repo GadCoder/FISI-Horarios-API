@@ -7,7 +7,7 @@ from db.models import Seccion
 class Docente(Base):
 
     id = Column(Integer, primary_key=True, index=True)
-    codigo_docente = Column(String)
+    codigo_docente = Column(String, unique=True)
     nombre = Column(String)
     apellido_paterno = Column(String)
     apellido_materno = Column(String)

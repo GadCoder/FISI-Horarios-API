@@ -8,7 +8,7 @@ class Curso(Base):
     carrera = Column(String)
     ciclo = Column(Integer)
     nombre_curso = Column(String)
-    codigo_curso = Column(String)
+    codigo_curso = Column(String, unique=True)
     creditaje = Column(Integer)
 
     secciones = relationship("Seccion", back_populates="curso")

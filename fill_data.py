@@ -2,13 +2,17 @@ import json
 import requests
 
 
-def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
-    url = "http://127.0.0.1:8000/create-curso/"
+def make_post_request(data: dict, url: str):
     headers = {
         'accept': 'application/json',
         'Content-Type': 'application/json'
     }
+    request = requests.post(url, json=data, headers=headers)
+    return request
 
+
+def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
+    url = "http://127.0.0.1:8000/cursos/create-curso/"
     data = {
         "carrera": carrera,
         "ciclo": ciclo,
@@ -16,14 +20,13 @@ def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
         "codigo_curso": codigo_curso,
         "creditaje": creditaje
     }
-
-    request = requests.post(url, json=data, headers=headers)
+    request = make_post_request(data=data, url=url)
     if request.status_code == 200:
         print(f"Curso {nombre_curso} insertado con éxito")
 
 
 def insert_cursos_from_carrera(carrera: str):
-    file = open(f"info/programacion_{carrera}.json")
+    file = open(f"info/programacion_{carrera.lower()}.json")
     info_json = json.load(file)
     for index, ciclo in enumerate(info_json["data"]):
         print(f"Ciclo : {index + 1}")
@@ -31,7 +34,7 @@ def insert_cursos_from_carrera(carrera: str):
             carrera = carrera
             ciclo = index + 1
             nombre_curso = curso["desAsignatura"]
-            codigo_curso = curso["codAsignatura"]
+            codigo_curso = str(curso["codAsignatura"])
             creditaje = curso["numCreditaje"]
             insert_curso(carrera=carrera,
                          ciclo=ciclo,
@@ -42,32 +45,26 @@ def insert_cursos_from_carrera(carrera: str):
 
 def insert_docente(codigo_docente: str, nombre_docente: str, apellido_paterno: str, apellido_materno: str):
     url = "http://127.0.0.1:8000/docentes/create-docente/"
-    headers = {
-        'accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-
     data = {
         "codigo_docente": codigo_docente,
         "nombre": nombre_docente,
         "apellido_paterno": apellido_paterno,
         "apellido_materno": apellido_materno
     }
-
-    request = requests.post(url, json=data, headers=headers)
+    request = make_post_request(data=data, url=url)
     if request.status_code == 200:
         print(f"Docente {nombre_docente} {apellido_paterno} insertado con éxito")
     elif request.status_code == 409:
         print(f"Docente {nombre_docente} {apellido_paterno} ya existe en la bd")
 
 
-def insert_docentes(carrera: str):
+def insert_docentes_from_carrera(carrera: str):
     file = open(f"info/programacion_{carrera}.json")
     info_json = json.load(file)
     for index, ciclo in enumerate(info_json["data"]):
         for curso in ciclo["asignatura"]:
             for seccion in curso["seccion"]:
-                codigo_docente = seccion["codDocente"]
+                codigo_docente = str(seccion["codDocente"])
                 nombre_docente = seccion["nomDocente"]
                 apellido_paterno = seccion["apePaterno"]
                 apellido_materno = seccion["apeMaterno"]
@@ -81,10 +78,42 @@ def insert_docentes(carrera: str):
                 )
 
 
+def insert_seccion(codigo_curso: str, codigo_docente: str, codigo_seccion: str, numero_seccion: int, carrera: str):
+    url = f'http://127.0.0.1:8000/secciones/create-seccion/{codigo_curso}/{codigo_docente}'
+    data = {
+      "codigo_seccion": codigo_seccion,
+      "numero_seccion": numero_seccion,
+      "carrera": carrera
+    }
+
+    request = make_post_request(data=data, url=url)
+    if request.status_code == 200:
+        print(f"Seccion {numero_seccion } del curso {codigo_curso} insertada con éxito")
+
+
+def insert_secciones_from_carrera(carrera):
+    file = open(f"info/programacion_{carrera}.json")
+    info_json = json.load(file)
+    for index, ciclo in enumerate(info_json["data"]):
+        for curso in ciclo["asignatura"]:
+            codigo_curso = str(curso["codAsignatura"])
+            for seccion in curso["seccion"]:
+                codigo_docente = str(seccion["codDocente"])
+                numero_seccion = seccion["codSeccion"]
+                codigo_seccion = str(codigo_curso + "-" + str(numero_seccion))
+                insert_seccion(codigo_curso=codigo_curso,
+                               codigo_docente=codigo_docente if codigo_docente != "--" else None,
+                               codigo_seccion=codigo_seccion,
+                               numero_seccion=numero_seccion,
+                               carrera=carrera)
+
+
 def main():
     carreras = ["SOFTWARE", "SISTEMAS"]
     for carrera in carreras:
-        insert_docentes(carrera)
+        insert_cursos_from_carrera(carrera)
+        insert_docentes_from_carrera(carrera)
+        insert_secciones_from_carrera(carrera)
 
 
 if __name__ == "__main__":
