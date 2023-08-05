@@ -1,0 +1,4473 @@
+{
+    "data": [
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "INO102",
+            "desAsignatura": "MÉTODOS DE ESTUDIO UNIVERSITARIO ",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 11,
+                    "horaInicio": "11:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 12,
+                    "horaInicio": "12:00",
+                    "horaFin": "14:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO101",
+            "desAsignatura": "REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA I ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 10,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 12,
+                    "horaInicio": "12:00",
+                    "horaFin": "14:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO104",
+            "desAsignatura": "CÁLCULO I ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 4,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "08:00",
+                    "horaFin": "12:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO103",
+            "desAsignatura": "DESARROLLO PERSONAL Y LIDERAZGO ",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 14,
+                    "horaInicio": "14:00",
+                    "horaFin": "15:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 15,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO106",
+            "desAsignatura": "ÁLGEBRA Y GEOMETRÍA ANALÍTICA ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 4,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "08:00",
+                    "horaFin": "12:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO105",
+            "desAsignatura": "BIOLOGÍA PARA CIENCIAS E INGENIERÍA ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 4,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "12:00",
+                    "horaFin": "14:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO107",
+            "desAsignatura": "MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INE002",
+            "desAsignatura": "PROGRAMACIÓN Y COMPUTACIÓN",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A0182",
+                "nomDocente": "MARIA ELENA",
+                "apePaterno": "RUIZ",
+                "apeMaterno": "RIVERA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INE013",
+            "desAsignatura": "EMPRENDIMIENTO E INNOVACIÓN ",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "09:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "09:00",
+                    "horaFin": "11:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "09:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "09:00",
+                    "horaFin": "11:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 16,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 1
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "INO201",
+            "desAsignatura": "REDACCIÓN Y TÉCNICAS DE COMUNICACIÓN EFECTIVA II ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO203",
+            "desAsignatura": "REALIDAD NACIONAL Y MUNDIAL ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO202",
+            "desAsignatura": "INVESTIGACIÓN FORMATIVA ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO205",
+            "desAsignatura": "FÍSICA I ",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 18,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO204",
+            "desAsignatura": "CÁLCULO II",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 4,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "004073",
+                "nomDocente": "TEODULFO",
+                "apePaterno": "AQUINO",
+                "apeMaterno": "LIÑAN",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "14:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "14:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "14:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "14:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO207",
+            "desAsignatura": "INTRODUCCIÓN A LAS CIENCIAS E INGENIERÍA ",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "095753",
+                "nomDocente": "ZHING FONG",
+                "apePaterno": "LAM",
+                "apeMaterno": "-",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1612",
+                "nomDocente": "CÉSAR AUGUSTO",
+                "apePaterno": "ANGULO",
+                "apeMaterno": "CALDERÓN",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "19:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "19:00",
+                    "horaFin": "21:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "095753",
+                "nomDocente": "ZHING FONG",
+                "apePaterno": "LAM",
+                "apeMaterno": "-",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "19:00",
+                    "horaFin": "21:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "19:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "INO206",
+            "desAsignatura": "QUÍMICA GENERAL ",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 15,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "18:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "09:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "12:00",
+                    "horaFin": "14:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "09:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "12:00",
+                    "horaFin": "14:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 2
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0302",
+            "desAsignatura": "ESTADÍSTICA",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0303",
+            "desAsignatura": "FISICA ELÉCTRONICA",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0304",
+            "desAsignatura": "INGENIERÍA ECONÓMICA",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "012351",
+                "nomDocente": "URCISINIO VICENTE",
+                "apePaterno": "CARDENAS",
+                "apeMaterno": "YACTAYO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0305",
+            "desAsignatura": "INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1609",
+                "nomDocente": "JORGE LUIS",
+                "apePaterno": "ZAVALETA",
+                "apeMaterno": "CAMPOS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "19:00",
+                    "horaFin": "21:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0306",
+            "desAsignatura": "MATEMÁTICA BÁSICA",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "17:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0307",
+            "desAsignatura": "ORGANIZACIÓN Y ADMINISTRACIÓN",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1871",
+                "nomDocente": "CARLOS ERNESTO",
+                "apePaterno": "CHÁVEZ ",
+                "apeMaterno": "HERRERA ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "16:00",
+                    "horaFin": "17:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0301",
+            "desAsignatura": "ALGORÍTMICA I",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 45,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1982",
+                "nomDocente": "GUSTAVO",
+                "apePaterno": "ARREDONDO  ",
+                "apeMaterno": "CASTILLO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 3
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0401",
+            "desAsignatura": "ALGORÍTMICA II",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "095729",
+                "nomDocente": "JORGELUIS",
+                "apePaterno": "CHÁVEZ",
+                "apeMaterno": "SOTO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 11,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "09454245",
+                "nomDocente": "JUAN RICARDO",
+                "apePaterno": "TAPIA",
+                "apeMaterno": "CARBAJAL",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "018686",
+                "nomDocente": "AUGUSTO PARCEMON",
+                "apePaterno": "CORTEZ",
+                "apeMaterno": "VÁSQUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0402",
+            "desAsignatura": "CONTABILIDAD PARA LA GESTIÓN",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 16,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0403",
+            "desAsignatura": "INNOVACIÓN, TECNOLOGÍA Y EMPRENDIMIENTO",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1611",
+                "nomDocente": "FRANK EDMUNDO",
+                "apePaterno": "ESCOBEDO",
+                "apeMaterno": "BAILÓN",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A4524",
+                "nomDocente": "LUZ SUSSY",
+                "apePaterno": "BAYONA  ",
+                "apeMaterno": "ORÉ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A5306",
+                "nomDocente": "IGOR JOVINO",
+                "apePaterno": "AGUILAR ",
+                "apeMaterno": "ALONSO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0404",
+            "desAsignatura": "MATEMÁTICA DISCRETA ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "055867",
+                "nomDocente": "DANIEL",
+                "apePaterno": "QUINTO",
+                "apeMaterno": "PAZCE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A5230",
+                "nomDocente": "CIRO",
+                "apePaterno": "RODRÍGUEZ ",
+                "apeMaterno": "RODRÍGUEZ ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A5230",
+                "nomDocente": "CIRO",
+                "apePaterno": "RODRÍGUEZ ",
+                "apeMaterno": "RODRÍGUEZ ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0405",
+            "desAsignatura": "PROBABILIDADES",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 10,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0406",
+            "desAsignatura": "PROCESOS DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1982",
+                "nomDocente": "GUSTAVO",
+                "apePaterno": "ARREDONDO  ",
+                "apeMaterno": "CASTILLO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A5307",
+                "nomDocente": "YUDI LUCERO",
+                "apePaterno": "GUZMÁN",
+                "apeMaterno": "MONTEZA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0407",
+            "desAsignatura": "SISTEMAS DIGITALES",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "099589",
+                "nomDocente": "FELIX ARMANDO",
+                "apePaterno": "FERMIN",
+                "apeMaterno": "PEREZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "017779",
+                "nomDocente": "WALTER PEDRO",
+                "apePaterno": "CONTRERAS",
+                "apeMaterno": "FLORES",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "017779",
+                "nomDocente": "WALTER PEDRO",
+                "apePaterno": "CONTRERAS",
+                "apeMaterno": "FLORES",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 4
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0501",
+            "desAsignatura": "ANÁLISIS Y DISEÑO DE ALGORITMOS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A7565",
+                "nomDocente": "JAVIER ANTONIO",
+                "apePaterno": "PRUDENCIO  ",
+                "apeMaterno": "VIDAL",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0502",
+            "desAsignatura": "ARQUITECTURA DE COMPUTADORAS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A5306",
+                "nomDocente": "IGOR JOVINO",
+                "apePaterno": "AGUILAR ",
+                "apeMaterno": "ALONSO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0503",
+            "desAsignatura": "CALIDAD DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 25,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1877",
+                "nomDocente": "ARTURO ALEJANDRO",
+                "apePaterno": "BARTRA ",
+                "apeMaterno": "MORE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0504",
+            "desAsignatura": "COMPUTACIÓN VISUAL",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "09571E",
+                "nomDocente": "JOHNLEDGARD",
+                "apePaterno": "TRUJILLO",
+                "apeMaterno": "TREJO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0505",
+            "desAsignatura": "ESTRUCTURA DE DATOS",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A7565",
+                "nomDocente": "JAVIER ANTONIO",
+                "apePaterno": "PRUDENCIO  ",
+                "apeMaterno": "VIDAL",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0506",
+            "desAsignatura": "ECONOMÍA PARA LA GESTIÓN",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "T",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0507",
+            "desAsignatura": "INGENIERÍA DE REQUISITOS ",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 25,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1871",
+                "nomDocente": "CARLOS ERNESTO",
+                "apePaterno": "CHÁVEZ ",
+                "apeMaterno": "HERRERA ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 5
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0601",
+            "desAsignatura": "ASEGURAMIENTO DE LA CALIDAD DEL SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A5291",
+                "nomDocente": "MARIO AGUSTÍN",
+                "apePaterno": "HUAPAYA ",
+                "apeMaterno": "CHUMPITAZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A0716",
+                "nomDocente": "FANY YEXENIA",
+                "apePaterno": "SOBERO",
+                "apeMaterno": "RODRÍGUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0602",
+            "desAsignatura": "BASE DE DATOS I",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1876",
+                "nomDocente": "SUMIKO ELIZABETH",
+                "apePaterno": "MURAKAMI ",
+                "apeMaterno": "DE LA CRUZ ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "0A1609",
+                "nomDocente": "JORGE LUIS",
+                "apePaterno": "ZAVALETA",
+                "apeMaterno": "CAMPOS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "17:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0603",
+            "desAsignatura": "DISEÑO DE SOFTWARE",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A4525",
+                "nomDocente": "ROSA",
+                "apePaterno": "MENÉNDEZ",
+                "apeMaterno": "MUERAS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1874",
+                "nomDocente": "HUGO RAFAEL",
+                "apePaterno": "CORDERO  ",
+                "apeMaterno": "SÁNCHEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "11:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0604",
+            "desAsignatura": "FORMACIÓN DE EMPRESAS DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 55,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "09831E",
+                "nomDocente": "CÉSAR AUGUSTO",
+                "apePaterno": "ALCÁNTARA",
+                "apeMaterno": "LOAYZA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A4524",
+                "nomDocente": "LUZ SUSSY",
+                "apePaterno": "BAYONA  ",
+                "apeMaterno": "ORÉ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0605",
+            "desAsignatura": "GESTIÓN DE LA CONFIGURACIÓN DEL SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1875",
+                "nomDocente": "LENIS ROSSI",
+                "apePaterno": "WONG ",
+                "apeMaterno": "PORTILLO ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0606",
+            "desAsignatura": "INTERACCIÓN HOMBRE COMPUTADOR",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A0690",
+                "nomDocente": "PABLO EDWIN",
+                "apePaterno": "LÓPEZ",
+                "apeMaterno": "VILLANUEVA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "094315",
+                "nomDocente": "ROBERT ELIAS",
+                "apePaterno": "ESPINOZA",
+                "apeMaterno": "DOMINGUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0607",
+            "desAsignatura": "SISTEMAS OPERATIVOS ",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "095702",
+                "nomDocente": "VÍCTORHUGO",
+                "apePaterno": "BUSTAMANTE",
+                "apeMaterno": "OLIVERA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "13:00",
+                    "horaFin": "15:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 25,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "095702",
+                "nomDocente": "VÍCTORHUGO",
+                "apePaterno": "BUSTAMANTE",
+                "apeMaterno": "OLIVERA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "13:00",
+                    "horaFin": "15:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 6
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0701",
+            "desAsignatura": "ARQUITECTURA DE SOFTWARE",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1874",
+                "nomDocente": "HUGO RAFAEL",
+                "apePaterno": "CORDERO  ",
+                "apeMaterno": "SÁNCHEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A4525",
+                "nomDocente": "ROSA",
+                "apePaterno": "MENÉNDEZ",
+                "apeMaterno": "MUERAS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0702",
+            "desAsignatura": "BASE DE DATOS II",
+            "canHorasTeoria": 3,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "02099E",
+                "nomDocente": "LUZ CORINA",
+                "apePaterno": "DEL PINO",
+                "apeMaterno": "RODRÍGUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1982",
+                "nomDocente": "GUSTAVO",
+                "apePaterno": "ARREDONDO  ",
+                "apeMaterno": "CASTILLO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0703",
+            "desAsignatura": "EXPERIENCIA DE USUARIO Y USABILIDAD",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A9126",
+                "nomDocente": "IVAN CARLO",
+                "apePaterno": "PETRLIK",
+                "apeMaterno": "AZABACHE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "13:00",
+                    "horaFin": "15:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0704",
+            "desAsignatura": "GESTIÓN DE PROYECTO DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 35,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1877",
+                "nomDocente": "ARTURO ALEJANDRO",
+                "apePaterno": "BARTRA ",
+                "apeMaterno": "MORE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0705",
+            "desAsignatura": "INTELIGENCIA ARTIFICIAL",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A2067",
+                "nomDocente": "JUAN",
+                "apePaterno": "GAMARRA ",
+                "apeMaterno": "MORENO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 16,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0706",
+            "desAsignatura": "MÉTODOS FORMALES PARA PRUEBAS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1877",
+                "nomDocente": "ARTURO ALEJANDRO",
+                "apePaterno": "BARTRA ",
+                "apeMaterno": "MORE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0707",
+            "desAsignatura": "REDES Y TRANSMISIÓN DE DATOS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1981",
+                "nomDocente": "WINSTON IGNACIO",
+                "apePaterno": "UGAZ ",
+                "apeMaterno": "CACHAY ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 7
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0801",
+            "desAsignatura": "AUTOMATIZACIÓN Y CONTROL DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0802",
+            "desAsignatura": "INTELIGENCIA DE NEGOCIOS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A7624",
+                "nomDocente": "ERNESTO DAVID",
+                "apePaterno": "CANCHO  ",
+                "apeMaterno": "RODRÍGUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A9127",
+                "nomDocente": "TEODORO MANUEL",
+                "apePaterno": "ANDRADE",
+                "apeMaterno": "MOGOLLON",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0803",
+            "desAsignatura": "METODOLOGÍA DE LA INVESTIGACIÓN",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 15,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A6226",
+                "nomDocente": "JOSÉ ALFREDO",
+                "apePaterno": "HERRERA",
+                "apeMaterno": "QUISPE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 15,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A0419",
+                "nomDocente": "LUIS ANGEL",
+                "apePaterno": "GUERRA",
+                "apeMaterno": "GRADOS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 3,
+                "codTurno": "X",
+                "canTopeAlumnos": 15,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "096458",
+                "nomDocente": "DAVID SANTOS",
+                "apePaterno": "MAURICIO",
+                "apeMaterno": "SÁNCHEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "10:00",
+                    "horaFin": "11:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 4,
+                "codTurno": "X",
+                "canTopeAlumnos": 15,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "055123",
+                "nomDocente": "LUZMILA ELISA",
+                "apePaterno": "PRÓ",
+                "apeMaterno": "CONCEPCIÓN",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0804",
+            "desAsignatura": "MINERÍA DE DATOS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A2067",
+                "nomDocente": "JUAN",
+                "apePaterno": "GAMARRA ",
+                "apeMaterno": "MORENO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A2417",
+                "nomDocente": "HUGO DAVID",
+                "apePaterno": "CALDERON  ",
+                "apeMaterno": "VILCA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0805",
+            "desAsignatura": "PROGRAMACIÓN CONCURRENTE Y PARALELA",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A9125",
+                "nomDocente": "YAMIL ALEXANDER",
+                "apePaterno": "QUIÑONES",
+                "apeMaterno": "NIETO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 16,
+                    "horaInicio": "16:00",
+                    "horaFin": "18:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0806",
+            "desAsignatura": "SEGURIDAD DEL SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1981",
+                "nomDocente": "WINSTON IGNACIO",
+                "apePaterno": "UGAZ ",
+                "apeMaterno": "CACHAY ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 20,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1981",
+                "nomDocente": "WINSTON IGNACIO",
+                "apePaterno": "UGAZ ",
+                "apeMaterno": "CACHAY ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0807",
+            "desAsignatura": "TALLER DE CONSTRUCCIÓN DE SOFTWARE WEB",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 4,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 60,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "09454245",
+                "nomDocente": "JUAN RICARDO",
+                "apePaterno": "TAPIA",
+                "apeMaterno": "CARBAJAL",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "09:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "09:00",
+                    "horaFin": "13:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "09:00",
+                    "horaFin": "13:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "088005",
+                "nomDocente": "NORA BERTHA",
+                "apePaterno": "LA SERNA",
+                "apeMaterno": "PALOMINO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "16:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0808",
+            "desAsignatura": "VERIFICACIÓN Y VALIDACIÓN DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A0716",
+                "nomDocente": "FANY YEXENIA",
+                "apePaterno": "SOBERO",
+                "apeMaterno": "RODRÍGUEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "N",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A5291",
+                "nomDocente": "MARIO AGUSTÍN",
+                "apePaterno": "HUAPAYA ",
+                "apeMaterno": "CHUMPITAZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 8
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W0901",
+            "desAsignatura": "DESARROLLO DE TESIS I",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 20,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1875",
+                "nomDocente": "LENIS ROSSI",
+                "apePaterno": "WONG ",
+                "apeMaterno": "PORTILLO ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "N",
+                "canTopeAlumnos": 20,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "098329",
+                "nomDocente": "CÉSAR",
+                "apePaterno": "LUZA",
+                "apeMaterno": "MONTERO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0902",
+            "desAsignatura": "GARANTÍA DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "10:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "10:00",
+                    "horaFin": "12:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0903",
+            "desAsignatura": "GERENCIA DE TECNOLOGÍA DE LA INFORMACIÓN",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 30,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A1873",
+                "nomDocente": "JOEL FERNANDO",
+                "apePaterno": "MACHADO ",
+                "apeMaterno": "VICENTE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MARTES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0904",
+            "desAsignatura": "GESTIÓN DE MANTENIMIENTO DEL SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "JUEVES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0905",
+            "desAsignatura": "GESTIÓN DE RIESGO DEL SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1873",
+                "nomDocente": "JOEL FERNANDO",
+                "apePaterno": "MACHADO ",
+                "apeMaterno": "VICENTE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0906",
+            "desAsignatura": "INTERNET DE LAS COSAS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A4523",
+                "nomDocente": "SERGIO PAULO",
+                "apePaterno": "VALCARCEL",
+                "apeMaterno": "ASCENCIOS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "13:00",
+                    "horaFin": "15:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0907",
+            "desAsignatura": "TALLER DE CONSTRUCCIÓN DE SOFTWARE MÓVIL",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 4,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A9126",
+                "nomDocente": "IVAN CARLO",
+                "apePaterno": "PETRLIK",
+                "apeMaterno": "AZABACHE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "08:00",
+                    "horaFin": "09:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "09:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "09:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W0908",
+            "desAsignatura": "SOFTWARE INTELIGENTE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A2067",
+                "nomDocente": "JUAN",
+                "apePaterno": "GAMARRA ",
+                "apeMaterno": "MORENO",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "17:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A2417",
+                "nomDocente": "HUGO DAVID",
+                "apePaterno": "CALDERON  ",
+                "apeMaterno": "VILCA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 9
+      },
+      {
+        "asignatura": [
+          {
+            "codAsignatura": "202W1006",
+            "desAsignatura": "TENDENCIAS EN INGENIERÍA DE SOFTWARE Y GESTIÓN",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 2,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1873",
+                "nomDocente": "JOEL FERNANDO",
+                "apePaterno": "MACHADO ",
+                "apeMaterno": "VICENTE",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "09:00",
+                    "horaFin": "11:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "11:00",
+                    "horaFin": "13:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W1001",
+            "desAsignatura": "ANALÍTICA DE DATOS",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A9124",
+                "nomDocente": "PEDRO MARTÍN",
+                "apePaterno": "LEZAMA",
+                "apeMaterno": "GONZALES",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "X",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A0419",
+                "nomDocente": "LUIS ANGEL",
+                "apePaterno": "GUERRA",
+                "apeMaterno": "GRADOS",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "18:00",
+                    "horaFin": "20:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "LUNES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W1003",
+            "desAsignatura": "PRÁCTICA PRE PROFESIONAL",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 4,
+            "canHorasLaboratorio": 0,
+            "numCreditaje": 4,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 50,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "P",
+                "codDocente": "0A0182",
+                "nomDocente": "MARIA ELENA",
+                "apePaterno": "RUIZ",
+                "apeMaterno": "RIVERA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "14:00",
+                    "horaFin": "16:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "20:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W1002",
+            "desAsignatura": "DESARROLLO DE TESIS II",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 2,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "N",
+                "canTopeAlumnos": 25,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A5230",
+                "nomDocente": "CIRO",
+                "apePaterno": "RODRÍGUEZ ",
+                "apeMaterno": "RODRÍGUEZ ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              },
+              {
+                "codSeccion": 2,
+                "codTurno": "N",
+                "canTopeAlumnos": 25,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "T",
+                "codDocente": "0A2417",
+                "nomDocente": "HUGO DAVID",
+                "apePaterno": "CALDERON  ",
+                "apeMaterno": "VILCA",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "20:00",
+                    "horaFin": "22:00",
+                    "dia": "MIERCOLES"
+                  },
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "19:00",
+                    "horaFin": "20:00",
+                    "dia": "MIERCOLES"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W1005",
+            "desAsignatura": "TENDENCIAS DE ARQUITECTURA DE SOFTWARE",
+            "canHorasTeoria": 2,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 2,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "0A1874",
+                "nomDocente": "HUGO RAFAEL",
+                "apePaterno": "CORDERO  ",
+                "apeMaterno": "SÁNCHEZ",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "17:00",
+                    "horaFin": "19:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "19:00",
+                    "horaFin": "21:00",
+                    "dia": "SABADO"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "19:00",
+                    "horaFin": "21:00",
+                    "dia": "SABADO"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codAsignatura": "202W1004",
+            "desAsignatura": "TALLER DE APLICACIONES SOCIALES",
+            "canHorasTeoria": 1,
+            "canHorasPractica": 0,
+            "canHorasLaboratorio": 4,
+            "numCreditaje": 3,
+            "indRegimen": "S",
+            "seccion": [
+              {
+                "codSeccion": 1,
+                "codTurno": "U",
+                "canTopeAlumnos": 40,
+                "canAlumMatriculados": 0,
+                "codTipoHorAsignatura": "L",
+                "codDocente": "--",
+                "nomDocente": "--",
+                "apePaterno": "--",
+                "apeMaterno": "--",
+                "codAula": "--",
+                "horarios": [
+                  {
+                    "codHorario": 1,
+                    "horaInicio": "15:00",
+                    "horaFin": "16:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 2,
+                    "horaInicio": "16:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  },
+                  {
+                    "codHorario": 3,
+                    "horaInicio": "16:00",
+                    "horaFin": "20:00",
+                    "dia": "VIERNES"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "num_CICLO_ANO_ASIGNATURA": 10
+      }
+    ],
+    "mensaje": "Exito.",
+    "codigo": "0"
+  }

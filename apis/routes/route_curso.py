@@ -1,0 +1,52 @@
+from fastapi import APIRouter
+from sqlalchemy.orm import Session
+from fastapi import HTTPException, status
+from fastapi import Depends
+from schemas.Curso import CursoCreate
+from db.session import get_db
+from db.repository.curso import create_new_curso, retreive_curso, list_cursos, delete_curso, list_cursos_from_carrera, list_cursos_from_ciclo
+
+
+router = APIRouter()
+
+
+@router.post("/create-curso/")
+def create_curso(curso: CursoCreate, db: Session = Depends(get_db)):
+    curso = create_new_curso(curso=curso, db=db)
+    return curso
+
+
+@router.get("/get-curso/{id}")
+def get_curso(id: int, db: Session = Depends(get_db)):
+    curso = retreive_curso(id=id, db=db)
+    if not curso:
+        raise HTTPException(detail=f"Curso with ID {id} does not exist.", status_code=status.HTTP_404_NOT_FOUND)
+    return curso
+
+
+@router.get("/get-all-cursos/")
+def get_all_cursos(db: Session = Depends(get_db)):
+    cursos = list_cursos(db=db)
+    return cursos
+
+
+@router.get("/get-cursos-from-carrera/{carrera}")
+def get_cursos_from_carrera(carrera: str, db: Session = Depends(get_db)):
+    cursos_carrera = list_cursos_from_carrera(carrera=carrera, db=db)
+    return cursos_carrera
+
+
+@router.get("/get-from-ciclo/{carrera}/{ciclo}")
+def get_cursos_from_ciclo(carrera: str, ciclo: int, db: Session = Depends(get_db)):
+    cursos_ciclo = list_cursos_from_ciclo(carrera=carrera, ciclo=ciclo, db=db)
+    return cursos_ciclo
+
+
+@router.delete("/delete-curso/{id}")
+def delete_a_curso(id: int, db: Session = Depends(get_db)):
+    message = delete_curso(id=id, db=db)
+    if message.get("error"):
+        raise HTTPException(detail=message.get("error"), status_code= status.HTTP_400_BAD_REQUEST)
+    return {
+        "message": f"Successfully deleted curso with id {id}"
+    }
