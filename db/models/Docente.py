@@ -5,7 +5,6 @@ from db.models import Seccion
 
 
 class Docente(Base):
-
     id = Column(Integer, primary_key=True, index=True)
     codigo_docente = Column(String, unique=True)
     nombre = Column(String)

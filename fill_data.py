@@ -11,6 +11,13 @@ def make_post_request(data: dict, url: str):
     return request
 
 
+
+def open_carrra_json(carrera):
+    file = open(f"info/programacion_{carrera.lower()}.json")
+    info_json = json.load(file)
+    return info_json
+
+
 def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
     url = "http://127.0.0.1:8000/cursos/create-curso/"
     data = {
@@ -26,15 +33,14 @@ def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
 
 
 def insert_cursos_from_carrera(carrera: str):
-    file = open(f"info/programacion_{carrera.lower()}.json")
-    info_json = json.load(file)
+    info_json = open_carrra_json(carrera)
     for index, ciclo in enumerate(info_json["data"]):
         print(f"Ciclo : {index + 1}")
         for curso in ciclo["asignatura"]:
             carrera = carrera
             ciclo = index + 1
             nombre_curso = curso["desAsignatura"]
-            codigo_curso = str(curso["codAsignatura"])
+            codigo_curso = carrera[:4] + "-" + str(curso["codAsignatura"])
             creditaje = curso["numCreditaje"]
             insert_curso(carrera=carrera,
                          ciclo=ciclo,
@@ -59,9 +65,8 @@ def insert_docente(codigo_docente: str, nombre_docente: str, apellido_paterno: s
 
 
 def insert_docentes_from_carrera(carrera: str):
-    file = open(f"info/programacion_{carrera}.json")
-    info_json = json.load(file)
-    for index, ciclo in enumerate(info_json["data"]):
+    info_json = open_carrra_json(carrera)
+    for ciclo in info_json["data"]:
         for curso in ciclo["asignatura"]:
             for seccion in curso["seccion"]:
                 codigo_docente = str(seccion["codDocente"])
@@ -92,11 +97,10 @@ def insert_seccion(codigo_curso: str, codigo_docente: str, codigo_seccion: str, 
 
 
 def insert_secciones_from_carrera(carrera):
-    file = open(f"info/programacion_{carrera}.json")
-    info_json = json.load(file)
-    for index, ciclo in enumerate(info_json["data"]):
+    info_json = open_carrra_json(carrera)
+    for ciclo in info_json["data"]:
         for curso in ciclo["asignatura"]:
-            codigo_curso = str(curso["codAsignatura"])
+            codigo_curso = carrera[:4] + "-" + str(curso["codAsignatura"])
             for seccion in curso["seccion"]:
                 codigo_docente = str(seccion["codDocente"])
                 numero_seccion = seccion["codSeccion"]
@@ -108,12 +112,56 @@ def insert_secciones_from_carrera(carrera):
                                carrera=carrera)
 
 
+def obtener_hora_en_int(hora_str: str):
+    return int(hora_str.split(":")[0])
+
+
+def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrera: str, codigo_seccion: str, numero_horario: int):
+    url = 'http://127.0.0.1:8000/horario-seccion/create-horario-seccion/'
+    data = {
+      "hora_inicio": hora_inicio,
+      "hora_fin": hora_fin,
+      "dia": dia,
+      "carrera": carrera,
+      "codigo_seccion": codigo_seccion,
+      "numero_horario": numero_horario
+    }
+
+    request = make_post_request(data=data, url=url)
+    if request.status_code == 200:
+        print(f"Horario {numero_horario} de la seccion {codigo_seccion} insertado con éxito")
+
+
+def insert_horarios_from_secciones(carrera):
+    info_json = open_carrra_json(carrera)
+    for ciclo in info_json["data"]:
+        for curso in ciclo["asignatura"]:
+            codigo_curso = carrera[:4] + "-" + str(curso["codAsignatura"])
+            for seccion in curso["seccion"]:
+                numero_seccion = seccion["codSeccion"]
+                codigo_seccion = str(codigo_curso + "-" + str(numero_seccion))
+                for horario in seccion["horarios"]:
+                    hora_inicio = obtener_hora_en_int(horario["horaInicio"])
+                    hora_fin = obtener_hora_en_int(horario["horaFin"])
+                    dia = horario["dia"]
+                    numero_horario = horario["codHorario"]
+                    insert_horario_for_seccion(
+                        hora_inicio=hora_inicio,
+                        hora_fin=hora_fin,
+                        dia=dia,
+                        carrera=carrera,
+                        codigo_seccion=codigo_seccion,
+                        numero_horario=numero_horario
+                    )
+
+
 def main():
     carreras = ["SOFTWARE", "SISTEMAS"]
     for carrera in carreras:
         insert_cursos_from_carrera(carrera)
         insert_docentes_from_carrera(carrera)
         insert_secciones_from_carrera(carrera)
+        insert_horarios_from_secciones(carrera)
 
 
 if __name__ == "__main__":

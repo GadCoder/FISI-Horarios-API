@@ -1,8 +1,6 @@
 from typing import Optional
 
-from pydantic import BaseModel, Field
-from schemas.Curso import Curso
-from schemas.Docente import Docente
+from pydantic import BaseModel
 from schemas.HorarioSeccion import HorarioSeccion
 
 
