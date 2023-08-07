@@ -104,7 +104,7 @@
       const BASEURL = "https://generador-horarios.fly.dev/";
       const horariosSeccionEscogida = [];
 
-      let colors = [
+      const colors = [
         "#fbf8cc",
         "#fde4cf",
         "#ffcfd2",
@@ -117,7 +117,7 @@
         "#b9fbc0",
       ];
 
-      let usedColors = [];
+      let usedColors = colors;
 
       function limpiar_opciones_select(select_id) {
         let select_item = document.getElementById(select_id);
@@ -254,15 +254,12 @@
       }
 
       function getCursoColor() {
-        if (usedColors.length == colors.length) {
-          usedColors = [];
+        const colorCurso = usedColors[0];
+        if (usedColors.length == 1) {
+          usedColors = colors;
+        } else {
+          usedColors.shift();
         }
-        let colorCurso = colors[Math.floor(Math.random() * colors.length)];
-        do {
-          console.log(colorCurso);
-          colorCurso = colors[Math.floor(Math.random() * colors.length)];
-        } while (colorCurso in usedColors);
-        usedColors.push(colorCurso);
         return colorCurso;
       }
       function insert_curso_in_table(
