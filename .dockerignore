@@ -1,7 +1,6 @@
 # flyctl launch added from .gitignore
 **/venv
 **/**/__pycache__
-**/sql_app.db
 .idea
 
 # flyctl launch added from .idea/.gitignore
