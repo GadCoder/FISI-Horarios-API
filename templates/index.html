@@ -14,13 +14,14 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1>FISI - Generador de horarios</h1>
+        <h1 style="font-weight: bold">FISI - Generador de horarios</h1>
       </div>
       <form>
         <div class="row mb-3">
           <div class="col-12 col-md-3">
             <label for="carrera" class="form-label">Carrera</label>
             <select name="carrera" id="carrera" class="form-select">
+              <option selected>Selecciona una carrera</option>
               <option value="SOFTWARE">Ingeniería de Software</option>
               <option value="SISTEMAS">Ingeniería de Sistemas</option>
             </select>
@@ -53,14 +54,70 @@
           </div>
         </div>
       </form>
+      <div class="row mb-3 d-flex justify-content-center">
+        <button
+          onclick="agregar_curso_escogido()"
+          class="btn btn-primary"
+          style="width: 40%"
+        >
+          Agregar curso
+        </button>
+      </div>
+      <div class="row mb-1">
+        <h2 style="text-align: center">HORARIOS</h2>
+      </div>
+
       <div class="row">
-        <button type="submit" class="btn btn-primary">Agregar curso</button>
+        <div style="overflow-x: auto" id="table-container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="text-center">HORA</th>
+                {% for dia in dias%}
+                <th class="text-center">{{dia}}</th>
+                {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for hora in horas%}
+              <tr>
+                {% set hora_loop = loop %}
+                <td class="text-center">{{hora}}</td>
+                {% for dia in dias%} {% set dia_loop = loop %}
+
+                <td
+                  id="{{'{}-{}'.format(hora_loop.index, dia_loop.index)}}"
+                  class="text-center"
+                  style="white-space: pre-wrap; word-wrap: break-word"
+                ></td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <script>
       console.log("Hello there");
 
       const BASEURL = "https://generador-horarios.fly.dev/";
+      const horariosSeccionEscogida = [];
+
+      let colors = [
+        "#fbf8cc",
+        "#fde4cf",
+        "#ffcfd2",
+        "#f1c0e8",
+        "#cfbaf0",
+        "#a3c4f3",
+        "#90dbf4",
+        "#8eecf5",
+        "#98f5e1",
+        "#b9fbc0",
+      ];
+
+      let usedColors = [];
 
       function limpiar_opciones_select(select_id) {
         let select_item = document.getElementById(select_id);
@@ -70,10 +127,49 @@
         }
       }
 
+      function limpiar_tabla_horarios() {
+        for (let dia = 1; dia < 7; dia++) {
+          for (let hora = 1; hora < 15; hora++) {
+            let celda = document.getElementById(`${hora}-${dia}`);
+            celda.innerText = "";
+            celda.style.setProperty("background-color", "");
+          }
+        }
+      }
+
+      function get_carrera_escogida() {
+        const carreraEscogida = document.getElementById("carrera").value;
+        return carreraEscogida;
+      }
+
+      function get_ciclo_escogido() {
+        const cicloEscogido = document.getElementById("ciclo").value;
+        return cicloEscogido;
+      }
+
+      function get_curso_escogido() {
+        const cursoEscogido = document.getElementById("curso").value;
+        return cursoEscogido;
+      }
+
+      function get_seccion_escogida() {
+        const seccionEscogida = document.getElementById("seccion").value;
+        return seccionEscogida;
+      }
+
+      function agregar_default_option(select) {
+        const selectElement = document.getElementById(select);
+        const defaultOption = document.createElement("option");
+        let textoInicial =
+          select == "seccion" ? "Selecciona una " : "Selecciona un ";
+        defaultOption.innerText = textoInicial + select;
+        selectElement.append(defaultOption);
+      }
+
       function agregar_cursos_a_ciclo() {
         const cursosSelect = document.getElementById("curso");
-        const carrera = document.getElementById("carrera").value;
-        const ciclo = document.getElementById("ciclo").value;
+        const carrera = get_carrera_escogida();
+        const ciclo = get_ciclo_escogido();
         limpiar_opciones_select("curso");
         agregar_default_option("curso");
         agregar_default_option("seccion");
@@ -95,13 +191,12 @@
 
       function agregar_secciones_a_curso() {
         const seccionSelect = document.getElementById("seccion");
-        const carrera = document.getElementById("carrera").value;
-        const curso = document.getElementById("curso").value;
+        const carrera = get_carrera_escogida();
+        const curso = get_curso_escogido();
         limpiar_opciones_select("seccion");
         agregar_default_option("seccion");
         const url = BASEURL + `secciones/get-secciones-from-curso/${curso}`;
         console.log(url);
-
         fetch(url)
           .then((response) => response.json())
           .then((data) => {
@@ -118,6 +213,14 @@
           });
       }
 
+      function crear_texto_horario(horario, numeroSeccion) {
+        const dia = horario.dia;
+        const horaInicio = horario.hora_inicio;
+        const horaFin = horario.hora_fin;
+        const opcionText = `G.${numeroSeccion} ${dia} ${horaInicio}:00-${horaFin}:00`;
+        return opcionText;
+      }
+
       function crear_opcion_de_horario(codigoSeccion, numeroSeccion, carrera) {
         const url =
           BASEURL +
@@ -127,40 +230,101 @@
         fetch(url)
           .then((response) => response.json())
           .then((data) => {
-            const codigoSeccion = data.codigo_seccion;
-            let opcion_text = "";
+            let opcionText = "";
             data.horarios.forEach((horario) => {
-              const dia = horario.dia;
-              const horaInicio = horario.hora_inicio;
-              const horaFin = horario.hora_fin;
-              opcion_text += `G.${numeroSeccion} ${dia} ${horaInicio}:00-${horaFin}:00`;
+              const parteTexto = crear_texto_horario(horario, numeroSeccion);
+              opcionText += parteTexto;
             });
             opcion.value = codigoSeccion;
-            opcion.innerText = opcion_text;
+            opcion.innerText = opcionText;
           });
         return opcion;
       }
 
-      function agregar_default_option(select) {
-        const selectElement = document.getElementById(select);
-        const defaultOption = document.createElement("option");
-        let textoInicial =
-          select == "seccion" ? "Selecciona una " : "Selecciona un ";
-        defaultOption.innerText = textoInicial + select;
-        selectElement.append(defaultOption);
+      function get_index_dia(dia) {
+        const dias = {
+          LUNES: 1,
+          MARTES: 2,
+          MIERCOLES: 3,
+          JUEVES: 4,
+          VIERNES: 5,
+          SABADO: 6,
+        };
+        return dias[dia];
+      }
+
+      function getCursoColor() {
+        if (usedColors.length == colors.length) {
+          usedColors = [];
+        }
+        let colorCurso = colors[Math.floor(Math.random() * colors.length)];
+        do {
+          console.log(colorCurso);
+          colorCurso = colors[Math.floor(Math.random() * colors.length)];
+        } while (colorCurso in usedColors);
+        usedColors.push(colorCurso);
+        return colorCurso;
+      }
+      function insert_curso_in_table(
+        nombreCurso,
+        numeroSeccion,
+        dia_index,
+        hora_index,
+        colorCelda
+      ) {
+        const celda = document.getElementById(`${hora_index - 7}-${dia_index}`);
+        celda.innerText = `${nombreCurso} G.${numeroSeccion}`;
+        celda.style.setProperty("background-color", colorCelda);
+      }
+
+      function agregar_curso_escogido() {
+        console.log("General kenobi");
+        const carreraEscogida = get_carrera_escogida();
+        const codigoSeccion = get_seccion_escogida();
+        const cursoSelect = document.getElementById("curso");
+        const cursoEscogido =
+          cursoSelect.options[cursoSelect.selectedIndex].text;
+        const numeroSeccion = codigoSeccion.slice(-1);
+        const url =
+          BASEURL +
+          `horario-seccion/get-horarios-from-seccion/${carreraEscogida}/${codigoSeccion}`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const colorCelda = getCursoColor();
+            data.horarios.forEach((horario) => {
+              const dia = horario.dia;
+              const horaInicio = horario.hora_inicio;
+              const horaFin = horario.hora_fin;
+              const diaIndex = get_index_dia(dia);
+              for (let hora = horaInicio; hora < horaFin; hora++) {
+                insert_curso_in_table(
+                  cursoEscogido,
+                  numeroSeccion,
+                  diaIndex,
+                  hora,
+                  colorCelda
+                );
+              }
+            });
+          });
       }
 
       document.getElementById("carrera").addEventListener("change", () => {
         const selects = ["curso", "seccion"];
         selects.forEach((select) => {
           limpiar_opciones_select(select);
+          limpiar_tabla_horarios();
           agregar_default_option(select);
         });
       });
+
       document.getElementById("ciclo").addEventListener("change", () => {
         limpiar_opciones_select("seccion");
         agregar_cursos_a_ciclo();
       });
+
       document
         .getElementById("curso")
         .addEventListener("change", agregar_secciones_a_curso);

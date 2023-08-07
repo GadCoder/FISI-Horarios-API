@@ -1,9 +1,8 @@
-from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI
 from db.base import Base
-from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.sessions import SessionMiddleware
 from db.session import engine
 from apis.base import api_router
 
@@ -40,14 +39,4 @@ def start_application():
     return app
 
 
-templates = Jinja2Templates(directory="templates")
-
 app = start_application()
-
-
-@app.get("/", response_class=HTMLResponse)
-async def root(request: Request):
-    ciclos = range(1, 11)
-    return templates.TemplateResponse(
-        "index.html", {"request": request, "ciclos": ciclos}
-    )

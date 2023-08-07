@@ -4,7 +4,14 @@ from fastapi import HTTPException, status
 from fastapi import Depends
 from schemas.Curso import CursoCreate
 from db.session import get_db
-from db.repository.curso import create_new_curso, retreive_curso, list_cursos, delete_curso, list_cursos_from_carrera, list_cursos_from_ciclo
+from db.repository.curso import (
+    create_new_curso,
+    retreive_curso,
+    list_cursos,
+    delete_curso,
+    list_cursos_from_carrera,
+    list_cursos_from_ciclo,
+)
 
 
 router = APIRouter()
@@ -16,11 +23,14 @@ def create_curso(curso: CursoCreate, db: Session = Depends(get_db)):
     return curso
 
 
-@router.get("/get-curso/{id}")
-def get_curso(id: int, db: Session = Depends(get_db)):
-    curso = retreive_curso(id=id, db=db)
+@router.get("/get-curso/{codigo_curso}")
+def get_curso(codigo_curso: str, db: Session = Depends(get_db)):
+    curso = retreive_curso(codigo_curso=codigo_curso, db=db)
     if not curso:
-        raise HTTPException(detail=f"Curso with ID {id} does not exist.", status_code=status.HTTP_404_NOT_FOUND)
+        raise HTTPException(
+            detail=f"Curso with ID {id} does not exist.",
+            status_code=status.HTTP_404_NOT_FOUND,
+        )
     return curso
 
 
@@ -46,7 +56,7 @@ def get_cursos_from_ciclo(carrera: str, ciclo: int, db: Session = Depends(get_db
 def delete_a_curso(id: int, db: Session = Depends(get_db)):
     message = delete_curso(id=id, db=db)
     if message.get("error"):
-        raise HTTPException(detail=message.get("error"), status_code= status.HTTP_400_BAD_REQUEST)
-    return {
-        "message": f"Successfully deleted curso with id {id}"
-    }
+        raise HTTPException(
+            detail=message.get("error"), status_code=status.HTTP_400_BAD_REQUEST
+        )
+    return {"message": f"Successfully deleted curso with id {id}"}
