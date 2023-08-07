@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Generador horarios - FISI</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>FISI - Generador de horarios</h1>
+      </div>
+      <form>
+        <div class="row mb-3">
+          <div class="col-12 col-md-3">
+            <label for="carrera" class="form-label">Carrera</label>
+            <select name="carrera" id="carrera" class="form-select">
+              <option value="SOFTWARE">Ingeniería de Software</option>
+              <option value="SISTEMAS">Ingeniería de Sistemas</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-3">
+            <label for="ciclo" class="form-label">Ciclo</label>
+            <select
+              name="ciclo"
+              id="ciclo"
+              class="form-select"
+              autocomplete="off"
+            >
+              <option selected>Selecciona un ciclo</option>
+              {% for ciclo in ciclos%}
+              <option value="{{ciclo}}">{{ciclo}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-12 col-md-3">
+            <label for="curso" class="form-label">Curso</label>
+            <select name="curso" id="curso" class="form-select">
+              <option selected>Selecciona un curso</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-3">
+            <label for="seccion" class="form-label">Sección</label>
+            <select name="seccion" id="seccion" class="form-select">
+              <option selected>Selecciona una seccion</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <button type="submit" class="btn btn-primary">Agregar curso</button>
+      </div>
+    </div>
+    <script src="{{ url_for('static', path='/main.js') }}"></script>
+  </body>
+</html>

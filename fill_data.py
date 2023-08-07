@@ -11,7 +11,6 @@ def make_post_request(data: dict, url: str):
     return request
 
 
-
 def open_carrra_json(carrera):
     file = open(f"info/programacion_{carrera.lower()}.json")
     info_json = json.load(file)
