@@ -27,21 +27,3 @@ def get_secciones_from_curso(codigo_curso: str, db: Session = Depends(get_db)):
     return secciones_curso
 
 
-@router.delete("/delete-seccion/{id}")
-def delete_a_seccion(id: int, db: Session = Depends(get_db)):
-    message = delete_seccion(id=id, db=db)
-    if message.get("error"):
-        raise HTTPException(detail=message.get("error"), status_code=status.HTTP_400_BAD_REQUEST)
-    return {
-        "message": f"Successfully deleted seccion with id {id}"
-    }
-
-
-@router.delete("/delete-all-secciones")
-def delete_all_secciones(db: Session = Depends(get_db)):
-    message = delete_secciones(db=db)
-    if message.get("error"):
-        raise HTTPException(detail=message.get("error"), status_code=status.HTTP_400_BAD_REQUEST)
-    return {
-        "message": f"Successfully deleted all secciones"
-    }

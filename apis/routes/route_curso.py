@@ -52,11 +52,4 @@ def get_cursos_from_ciclo(carrera: str, ciclo: int, db: Session = Depends(get_db
     return cursos_ciclo
 
 
-@router.delete("/delete-curso/{id}")
-def delete_a_curso(id: int, db: Session = Depends(get_db)):
-    message = delete_curso(id=id, db=db)
-    if message.get("error"):
-        raise HTTPException(
-            detail=message.get("error"), status_code=status.HTTP_400_BAD_REQUEST
-        )
-    return {"message": f"Successfully deleted curso with id {id}"}
+

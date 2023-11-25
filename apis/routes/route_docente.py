@@ -32,21 +32,3 @@ def get_all_docentes(db: Session = Depends(get_db)):
     return docentes
 
 
-@router.delete("/delete-docente/{id}")
-def delete_a_docente(id: int, db: Session = Depends(get_db)):
-    message = delete_docente(id=id, db=db)
-    if message.get("error"):
-        raise HTTPException(detail=message.get("error"), status_code= status.HTTP_400_BAD_REQUEST)
-    return {
-        "message": f"Successfully deleted docente with id {id}"
-    }
-
-
-@router.delete("/delete-all-docentes")
-def delete_all_docentes(db: Session = Depends(get_db)):
-    message = delete_docentes(db=db)
-    if message.get("error"):
-        raise HTTPException(detail=message.get("error"), status_code=status.HTTP_400_BAD_REQUEST)
-    return {
-        "message": f"Successfully deleted all docentes"
-    }

@@ -15,8 +15,6 @@ def include_router(app):
     app.include_router(api_router)
 
 
-def mount_static_folder(app):
-    app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 def add_cors(app):
@@ -34,7 +32,6 @@ def start_application():
     app = FastAPI()
     create_tables()
     include_router(app)
-    mount_static_folder(app)
     add_cors(app)
     return app
 
