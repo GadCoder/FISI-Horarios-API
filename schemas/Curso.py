@@ -7,6 +7,7 @@ class CursoCreate(BaseModel):
     nombre_curso: str
     codigo_curso: str
     creditaje: int
+    plan: str
 
 
 class Curso(BaseModel):

@@ -4,7 +4,7 @@ from schemas.Seccion import SeccionCreate
 from db.models.Seccion import Seccion
 
 
-def create_new_seccion(seccion: SeccionCreate, codigo_curso: str, codigo_docente: str,  db: Session):
+def create_new_seccion(seccion: SeccionCreate, codigo_curso: str, codigo_docente: str, db: Session):
     seccion = Seccion(**seccion.dict(), codigo_curso=codigo_curso, codigo_docente=codigo_docente)
     db.add(seccion)
     db.commit()
@@ -17,8 +17,8 @@ def list_secciones(db: Session):
     return secciones
 
 
-def list_secciones_from_curso(codigo_curso: str, db: Seccion):
-    secciones_curso = db.query(Seccion).filter(Seccion.codigo_curso == codigo_curso).all()
+def list_secciones_from_curso(plan: str, codigo_curso: str, db: Seccion):
+    secciones_curso = db.query(Seccion).filter(Seccion.plan == plan,  Seccion.codigo_curso == codigo_curso).all()
     return secciones_curso
 
 

@@ -8,6 +8,7 @@ class SeccionBase(BaseModel):
     codigo_seccion: str
     numero_seccion: int
     carrera: str
+    plan: str
 
 
 class SeccionCreate(SeccionBase):

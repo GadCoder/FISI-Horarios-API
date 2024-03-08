@@ -11,28 +11,29 @@ def make_post_request(data: dict, url: str):
     return request
 
 
-def open_carrra_json(carrera):
-    file = open(f"info/{carrera.lower()}.json")
+def open_carrera_json(carrera, plan):
+    file = open(f"info/{plan}/{carrera.lower()}.json")
     info_json = json.load(file)
     return info_json
 
 
-def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje):
+def insert_curso(carrera, ciclo, nombre_curso, codigo_curso, creditaje, plan):
     url = "http://127.0.0.1:8000/cursos/create-curso/"
     data = {
         "carrera": carrera,
         "ciclo": ciclo,
         "nombre_curso": nombre_curso,
         "codigo_curso": codigo_curso,
-        "creditaje": creditaje
+        "creditaje": creditaje,
+        "plan": plan
     }
     request = make_post_request(data=data, url=url)
     if request.status_code == 200:
         print(f"Curso {nombre_curso} insertado con éxito")
 
 
-def insert_cursos_from_carrera(carrera: str):
-    info_json = open_carrra_json(carrera)
+def insert_cursos_from_carrera(plan: str, carrera: str):
+    info_json = open_carrera_json(carrera, plan)
     for index, ciclo in enumerate(info_json["data"]):
         print(f"Ciclo : {index + 1}")
         for curso in ciclo["asignatura"]:
@@ -45,7 +46,8 @@ def insert_cursos_from_carrera(carrera: str):
                          ciclo=ciclo,
                          nombre_curso=nombre_curso,
                          codigo_curso=codigo_curso,
-                         creditaje=creditaje)
+                         creditaje=creditaje,
+                         plan=plan)
 
 
 def insert_docente(codigo_docente: str, nombre_docente: str, apellido_paterno: str, apellido_materno: str):
@@ -63,8 +65,8 @@ def insert_docente(codigo_docente: str, nombre_docente: str, apellido_paterno: s
         print(f"Docente {nombre_docente} {apellido_paterno} ya existe en la bd")
 
 
-def insert_docentes_from_carrera(carrera: str):
-    info_json = open_carrra_json(carrera)
+def insert_docentes_from_carrera(plan: str, carrera: str):
+    info_json = open_carrera_json(carrera, plan)
     for ciclo in info_json["data"]:
         for curso in ciclo["asignatura"]:
             for seccion in curso["seccion"]:
@@ -82,12 +84,13 @@ def insert_docentes_from_carrera(carrera: str):
                 )
 
 
-def insert_seccion(codigo_curso: str, codigo_docente: str, codigo_seccion: str, numero_seccion: int, carrera: str):
+def insert_seccion(codigo_curso: str, codigo_docente: str, codigo_seccion: str, numero_seccion: int, carrera: str, plan: str):
     url = f'http://127.0.0.1:8000/secciones/create-seccion/{codigo_curso}/{codigo_docente}'
     data = {
       "codigo_seccion": codigo_seccion,
       "numero_seccion": numero_seccion,
-      "carrera": carrera
+      "carrera": carrera,
+      "plan": plan
     }
 
     request = make_post_request(data=data, url=url)
@@ -95,8 +98,8 @@ def insert_seccion(codigo_curso: str, codigo_docente: str, codigo_seccion: str, 
         print(f"Seccion {numero_seccion } del curso {codigo_curso} insertada con éxito")
 
 
-def insert_secciones_from_carrera(carrera):
-    info_json = open_carrra_json(carrera)
+def insert_secciones_from_carrera(plan: str, carrera):
+    info_json = open_carrera_json(carrera, plan)
     for ciclo in info_json["data"]:
         for curso in ciclo["asignatura"]:
             codigo_curso = carrera[:4] + "-" + str(curso["codAsignatura"])
@@ -108,14 +111,15 @@ def insert_secciones_from_carrera(carrera):
                                codigo_docente=codigo_docente if codigo_docente != "--" else None,
                                codigo_seccion=codigo_seccion,
                                numero_seccion=numero_seccion,
-                               carrera=carrera)
+                               carrera=carrera,
+                               plan=plan)
 
 
 def obtener_hora_en_int(hora_str: str):
     return int(hora_str.split(":")[0])
 
 
-def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrera: str, codigo_seccion: str, numero_horario: int):
+def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrera: str, codigo_seccion: str, numero_horario: int, plan: str):
     url = 'http://127.0.0.1:8000/horario-seccion/create-horario-seccion/'
     data = {
       "hora_inicio": hora_inicio,
@@ -123,7 +127,8 @@ def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrer
       "dia": dia,
       "carrera": carrera,
       "codigo_seccion": codigo_seccion,
-      "numero_horario": numero_horario
+      "numero_horario": numero_horario,
+      "plan": plan
     }
 
     request = make_post_request(data=data, url=url)
@@ -131,8 +136,8 @@ def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrer
         print(f"Horario {numero_horario} de la seccion {codigo_seccion} insertado con éxito")
 
 
-def insert_horarios_from_secciones(carrera):
-    info_json = open_carrra_json(carrera)
+def insert_horarios_from_secciones(plan: str, carrera):
+    info_json = open_carrera_json(carrera, plan)
     for ciclo in info_json["data"]:
         for curso in ciclo["asignatura"]:
             codigo_curso = carrera[:4] + "-" + str(curso["codAsignatura"])
@@ -150,17 +155,24 @@ def insert_horarios_from_secciones(carrera):
                         dia=dia,
                         carrera=carrera,
                         codigo_seccion=codigo_seccion,
-                        numero_horario=numero_horario
+                        numero_horario=numero_horario,
+                        plan=plan
                     )
 
 
 def main():
-    carreras = ["SOFTWARE", "SISTEMAS"]
-    for carrera in carreras:
-        insert_cursos_from_carrera(carrera)
-        insert_docentes_from_carrera(carrera)
-        insert_secciones_from_carrera(carrera)
-        insert_horarios_from_secciones(carrera)
+    planes = ["2023", "2018"]
+    try:
+        for plan in planes:
+            carreras = ["SOFTWARE", "SISTEMAS"]
+            for carrera in carreras:
+                print(f"Inserting data for plan {plan} carrera {carrera}")
+                insert_cursos_from_carrera(plan, carrera)
+                insert_docentes_from_carrera(plan, carrera)
+                insert_secciones_from_carrera(plan, carrera)
+                insert_horarios_from_secciones(plan, carrera)
+    except Exception as e:
+        print(f"-> Error: {e}")
 
 
 if __name__ == "__main__":

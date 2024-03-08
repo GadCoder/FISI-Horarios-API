@@ -21,9 +21,9 @@ def get_all_secciones(db: Session = Depends(get_db)):
     return secciones
 
 
-@router.get("/get-secciones-from-curso/{codigo_curso}")
-def get_secciones_from_curso(codigo_curso: str, db: Session = Depends(get_db)):
-    secciones_curso = list_secciones_from_curso(codigo_curso=codigo_curso, db=db)
+@router.get("/get-secciones-from-curso/{plan}/{codigo_curso}")
+def get_secciones_from_curso(plan: str, codigo_curso: str, db: Session = Depends(get_db)):
+    secciones_curso = list_secciones_from_curso(plan=plan, codigo_curso=codigo_curso, db=db)
     return secciones_curso
 
 

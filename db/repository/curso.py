@@ -10,6 +10,7 @@ def create_new_curso(curso: CursoCreate, db: Session):
         nombre_curso=curso.nombre_curso,
         codigo_curso=curso.codigo_curso,
         creditaje=curso.creditaje,
+        plan=curso.plan
     )
     db.add(curso)
     db.commit()
@@ -27,14 +28,14 @@ def list_cursos(db: Session):
     return cursos
 
 
-def list_cursos_from_carrera(carrera: str, db: Session):
-    cursos_carrera = db.query(Curso).filter(Curso.carrera == carrera).all()
+def list_cursos_from_carrera(plan: str, carrera: str, db: Session):
+    cursos_carrera = db.query(Curso).filter(Curso.plan == plan, Curso.carrera == carrera).all()
     return cursos_carrera
 
 
-def list_cursos_from_ciclo(carrera: str, ciclo: int, db: Session):
+def list_cursos_from_ciclo(plan: str, carrera: str, ciclo: int, db: Session):
     cursos_ciclo = (
-        db.query(Curso).filter(Curso.carrera == carrera, Curso.ciclo == ciclo).all()
+        db.query(Curso).filter(Curso.plan == plan, Curso.carrera == carrera, Curso.ciclo == ciclo).all()
     )
     return cursos_ciclo
 

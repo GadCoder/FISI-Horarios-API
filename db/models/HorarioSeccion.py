@@ -10,6 +10,7 @@ class HorarioSeccion(Base):
     dia = Column(String)
     numero_horario = Column(Integer)
     carrera = Column(String)
+    plan = Column(String)
     codigo_seccion = Column(String, ForeignKey("seccion.codigo_seccion"))
     seccion = relationship("Seccion", back_populates="horarios")
 

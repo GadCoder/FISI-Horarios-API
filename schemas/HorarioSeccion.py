@@ -8,6 +8,7 @@ class HorarioSeccionBase(BaseModel):
     carrera: str
     codigo_seccion: str
     numero_horario: int
+    plan: str 
 
 
 class HorarioSeccionCreate(HorarioSeccionBase):

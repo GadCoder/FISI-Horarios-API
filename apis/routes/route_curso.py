@@ -40,15 +40,15 @@ def get_all_cursos(db: Session = Depends(get_db)):
     return cursos
 
 
-@router.get("/get-cursos-from-carrera/{carrera}")
-def get_cursos_from_carrera(carrera: str, db: Session = Depends(get_db)):
-    cursos_carrera = list_cursos_from_carrera(carrera=carrera, db=db)
+@router.get("/get-cursos-from-carrera/{plan}/{carrera}")
+def get_cursos_from_carrera(plan: str, carrera: str, db: Session = Depends(get_db)):
+    cursos_carrera = list_cursos_from_carrera(plan=plan, carrera=carrera, db=db)
     return cursos_carrera
 
 
-@router.get("/get-from-ciclo/{carrera}/{ciclo}")
-def get_cursos_from_ciclo(carrera: str, ciclo: int, db: Session = Depends(get_db)):
-    cursos_ciclo = list_cursos_from_ciclo(carrera=carrera, ciclo=ciclo, db=db)
+@router.get("/get-from-ciclo/{plan}/{carrera}/{ciclo}")
+def get_cursos_from_ciclo(plan: str, carrera: str, ciclo: int, db: Session = Depends(get_db)):
+    cursos_ciclo = list_cursos_from_ciclo(plan=plan, carrera=carrera, ciclo=ciclo, db=db)
     return cursos_ciclo
 
 

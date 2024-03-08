@@ -20,11 +20,12 @@ def create_horario_seccion(
     return horario_seccion
 
 
-@router.get("/get-horarios-from-seccion/{carrera}/{codigo_seccion}")
+@router.get("/get-horarios-from-seccion/{plan}/{carrera}/{codigo_seccion}")
 def get_horarios_from_seccion(
-    carrera: str, codigo_seccion: str, db: Session = Depends(get_db)
+    plan: str, carrera: str, codigo_seccion: str, db: Session = Depends(get_db)
 ):
     horarios_seccion = list_horarios_from_seccion(
+        plan=plan,
         carrera=carrera, codigo_seccion=codigo_seccion, db=db
     )
     return horarios_seccion

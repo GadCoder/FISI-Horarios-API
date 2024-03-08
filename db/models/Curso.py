@@ -10,5 +10,6 @@ class Curso(Base):
     nombre_curso = Column(String)
     codigo_curso = Column(String, unique=True)
     creditaje = Column(Integer)
+    plan = Column(String)
 
     secciones = relationship("Seccion", back_populates="curso")

@@ -9,6 +9,7 @@ class Seccion(Base):
     numero_seccion = Column(Integer)
 
     carrera = Column(String)
+    plan = Column(String)
 
     codigo_curso = Column(String, ForeignKey("curso.codigo_curso"))
     curso = relationship("Curso", back_populates="secciones")
