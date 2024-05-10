@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git ${github_url}
+                git "${github_url}"
             }
         }
 
@@ -28,24 +28,31 @@ pipeline {
             steps {
                 script {
                     // Clone FastAPI project from Git onto VPS
-                    sshagent(['oci-server']) (
-                        remote: credentials('host'),
-                        user: credentials('user'),
-                        script: 'git clone ${github_url} ${vps_code_folder}'
-                    )
+                   sshagent(['oci-server']) {
+                        sshScript(
+                            remote: credentials('host'),
+                            user: credentials('user'),
+                            script: "git clone ${github_url} ${vps_code_folder}"
+                        )
+                    }
+
 
                     // Build Docker image on VPS
                     sshagent(['oci-server']) (
-                        remote: credentials('host'),
-                        user: credentials('user'),
-                        script: 'cd ${vps_code_folder} && docker build -t horarios-api .'
+                        sshScript(
+                            remote: credentials('host'),
+                            user: credentials('user'),
+                            script: 'cd ${vps_code_folder} && docker build -t horarios-api .'
+                        )
                     )
 
                     // Run Docker container on VPS
                     sshagent(['oci-server']) (
-                        remote: credentials('host'),
-                        user: credentials('user'),
-                        script: 'docker run -d -p 8080:8080 horarios-api'
+                        sshScript(
+                            remote: credentials('host'),
+                            user: credentials('user'),
+                            script: 'docker run -d -p 8080:8080 horarios-api'
+                        )
                     )
                 }
             }
