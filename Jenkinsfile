@@ -59,17 +59,5 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            // Clean up steps, if any
-        }
 
-        success {
-            // Actions to perform on success, e.g., sending notifications
-        }
-
-        failure {
-            // Actions to perform on failure, e.g., sending notifications
-        }
-    }
 }
