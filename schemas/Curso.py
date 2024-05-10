@@ -10,7 +10,6 @@ class CursoCreate(BaseModel):
     plan: str
 
 
-
 class Curso(BaseModel):
     id: int
 

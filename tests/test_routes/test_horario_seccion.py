@@ -3,7 +3,7 @@ from tests.utils.horario_seccion import create_random_horario_seccion
 
 
 def test_should_create_new_horario_seccion(client, db_session):
-    seccion = create_random_seccion(db=db_session)
+    seccion = create_random_seccion(db=db_session)  
     data = {
         "hora_inicio": 8,
         "hora_fin": 12,
