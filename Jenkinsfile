@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         github_url = 'https://github.com/GadCoder/FISI-Horarios-API.git'
-        vps_code_folder = '/home/code/horarios-api/'
+        vps_code_folder = '/home/${credentials(user)}/code/horarios-api/'
     }
 
     stages {
