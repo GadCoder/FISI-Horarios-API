@@ -8,7 +8,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git "${github_url}"
+                script {
+                    // Checkout the code from the main branch
+                    checkout([$class: 'GitSCM', 
+                              branches: [[name: 'main']], 
+                              userRemoteConfigs: [[url: '${github_url}']]])
+                }
             }
         }
 
