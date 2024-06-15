@@ -11,6 +11,8 @@ class HorarioSeccion(Base):
     numero_horario = Column(Integer)
     carrera = Column(String)
     plan = Column(String)
+    aula = Column(String, nullable = True)
+    pabellon = Column(String, nullable = True)
     codigo_seccion = Column(String, ForeignKey("seccion.codigo_seccion"))
     seccion = relationship("Seccion", back_populates="horarios")
 

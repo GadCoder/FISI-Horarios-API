@@ -1,6 +1,6 @@
 import json
 import requests
-
+import random
 
 def make_post_request(data: dict, url: str):
     headers = {
@@ -119,7 +119,16 @@ def obtener_hora_en_int(hora_str: str):
     return int(hora_str.split(":")[0])
 
 
-def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrera: str, codigo_seccion: str, numero_horario: int, plan: str):
+def insert_horario_for_seccion(hora_inicio: int, 
+                                hora_fin: int, 
+                                dia: str,
+                                carrera: str,
+                                codigo_seccion: str,
+                                numero_horario: int,
+                                plan: str,
+                                aula: str,
+                                pabellon: str
+                                ):
     url = 'http://127.0.0.1:8000/horario-seccion/create-horario-seccion/'
     data = {
       "hora_inicio": hora_inicio,
@@ -128,13 +137,28 @@ def insert_horario_for_seccion(hora_inicio: int, hora_fin: int, dia: str, carrer
       "carrera": carrera,
       "codigo_seccion": codigo_seccion,
       "numero_horario": numero_horario,
-      "plan": plan
+      "plan": plan,
+      "aula": aula,
+      "pabellon": pabellon
     }
 
     request = make_post_request(data=data, url=url)
     if request.status_code == 200:
         print(f"Horario {numero_horario} de la seccion {codigo_seccion} insertado con éxito")
 
+
+
+def get_random_aula():
+    first_digit = random.randint(1,3)
+    last_digit = random.randint(1,9)
+    return f"{first_digit}0{last_digit}"
+
+def get_random_pabellon():
+    salt = random.randint(0,1)
+    if salt:
+        return "nuevo"
+    else:
+        return "antiguo"
 
 def insert_horarios_from_secciones(plan: str, carrera):
     info_json = open_carrera_json(carrera, plan)
@@ -149,6 +173,8 @@ def insert_horarios_from_secciones(plan: str, carrera):
                     hora_fin = obtener_hora_en_int(horario["horaFin"])
                     dia = horario["dia"]
                     numero_horario = horario["codHorario"]
+                    aula = get_random_aula()
+                    pabellon = get_random_pabellon()
                     insert_horario_for_seccion(
                         hora_inicio=hora_inicio,
                         hora_fin=hora_fin,
@@ -156,7 +182,9 @@ def insert_horarios_from_secciones(plan: str, carrera):
                         carrera=carrera,
                         codigo_seccion=codigo_seccion,
                         numero_horario=numero_horario,
-                        plan=plan
+                        plan=plan,
+                        aula=aula,
+                        pabellon=pabellon
                     )
 
 

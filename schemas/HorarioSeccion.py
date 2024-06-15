@@ -9,6 +9,8 @@ class HorarioSeccionBase(BaseModel):
     codigo_seccion: str
     numero_horario: int
     plan: str 
+    aula: str
+    pabellon: str
 
 
 class HorarioSeccionCreate(HorarioSeccionBase):
