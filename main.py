@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 from db.base import Base
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from starlette.middleware.sessions import SessionMiddleware
 from db.session import engine
 from apis.base import api_router
 
@@ -13,8 +11,6 @@ def create_tables():
 
 def include_router(app):
     app.include_router(api_router)
-
-
 
 
 def add_cors(app):

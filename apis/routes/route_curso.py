@@ -17,7 +17,7 @@ from db.repository.curso import (
 router = APIRouter()
 
 
-@router.post("/create-curso/")
+@router.post("/create-curso/", response_model=CursoCreate)
 def create_curso(curso: CursoCreate, db: Session = Depends(get_db)):
     curso = create_new_curso(curso=curso, db=db)
     return curso
