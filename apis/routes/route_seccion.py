@@ -15,7 +15,7 @@ def create_seccion(seccion: SeccionCreate, codigo_curso: str, codigo_docente, db
     return seccion
 
 
-@router.get("/get-all-secciones")
+@router.get("/get-all-secciones/")
 def get_all_secciones(db: Session = Depends(get_db)):
     secciones = list_secciones(db=db)
     return secciones
