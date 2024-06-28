@@ -26,7 +26,7 @@ def get_curso(id: int, db: Session = Depends(get_db)):
     return docente
 
 
-@router.get("/get-all-docentes/")
+@router.get("/get-all-docentes")
 def get_all_docentes(db: Session = Depends(get_db)):
     docentes = list_docentes(db=db)
     return docentes
