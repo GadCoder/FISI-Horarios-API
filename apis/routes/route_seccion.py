@@ -4,7 +4,7 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 from schemas.Seccion import SeccionCreate
 from db.session import get_db
-from db.repository.seccion import create_new_seccion, delete_seccion, list_secciones, list_secciones_from_curso, delete_secciones
+from db.repository.seccion import create_new_seccion, list_secciones, list_secciones_from_curso, delete_secciones
 
 router = APIRouter()
 
